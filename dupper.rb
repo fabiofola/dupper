@@ -45,30 +45,33 @@ when "report"
     end
   end
   maybe_dups = unique.select {|k,v| v.size > 1 }
+
   iqueue = Queue.new
   oqueue = Queue.new
 
   maybe_dups.each do |size,files|
     files.each {|file| iqueue << {size: size, file: file}}
   end
+
   ts = []
   
   N.times {
     ts << Thread.new {
       begin
         while m = iqueue.pop(non_block=true)
+          begin
             hash = Digest::MD5.hexdigest(File.read(m[:file]))
-            #hash = system("md5 -q \"#{m[:file]}\"")
-            if hash
-              oqueue << {size: m[:size],file: m[:file], hash: hash}
-            end
+            oqueue << {size: m[:size],file: m[:file], hash: hash}
+          rescue
+          end
         end
       rescue StandardError
       end
     }
   }
-
   ts.each {|t| t.join}
+  puts iqueue.size
+  puts oqueue.size
   
   maybe_dups.keys.each {|size| unique.delete(size).to_s}
 
@@ -80,12 +83,7 @@ when "report"
 
   unique.merge!(tmp)
 
-
-  #unique.select {|k,v| v.size > 1 }
-  #  .map do |size,files|
-  #     unique[size] = files_to_digests(files)
-  #  end
-  puts unique.to_json
+  #puts unique.to_json
 when "merge"
   first = JSON.parse(File.read(ARGV[1]))
   second = JSON.parse(File.read(ARGV[2]))
