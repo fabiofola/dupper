@@ -37,6 +37,7 @@ case ARGV[0]
 when "report"
   unique = Hash.new { |k,v| k[v] = [] }
   Dir.glob("**/**").each do |myfile|
+    next unless File.file?(myfile)
     file = File.absolute_path(myfile)
     begin
       size = File.size(file).to_s
@@ -70,8 +71,6 @@ when "report"
     }
   }
   ts.each {|t| t.join}
-  puts iqueue.size
-  puts oqueue.size
   
   maybe_dups.keys.each {|size| unique.delete(size).to_s}
 
@@ -83,7 +82,7 @@ when "report"
 
   unique.merge!(tmp)
 
-  #puts unique.to_json
+  puts unique.to_json
 when "merge"
   first = JSON.parse(File.read(ARGV[1]))
   second = JSON.parse(File.read(ARGV[2]))
