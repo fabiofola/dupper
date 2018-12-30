@@ -3,12 +3,20 @@ require 'pp'
 require 'digest/md5'
 require 'json'
 
+#scan
+#analyze
+#report
+N=8
+
+
 def files_to_digests files
   result = Hash.new { |k,v| k[v] = [] }
   files.each do |file|
     begin
       hash = Digest::MD5.hexdigest(File.read(file))
-      result[hash] << file
+      if hash
+        result[hash] << file
+      end
     rescue
     end
   end
@@ -36,10 +44,47 @@ when "report"
     rescue
     end
   end
-  unique.select {|k,v| v.size > 1 }
-    .each do |size,files|
-       unique[size] = files_to_digests(files)
-    end
+  maybe_dups = unique.select {|k,v| v.size > 1 }
+  iqueue = Queue.new
+  oqueue = Queue.new
+
+  maybe_dups.each do |size,files|
+    files.each {|file| iqueue << {size: size, file: file}}
+  end
+  ts = []
+  
+  N.times {
+    ts << Thread.new {
+      begin
+        while m = iqueue.pop(non_block=true)
+            hash = Digest::MD5.hexdigest(File.read(m[:file]))
+            #hash = system("md5 -q \"#{m[:file]}\"")
+            if hash
+              oqueue << {size: m[:size],file: m[:file], hash: hash}
+            end
+        end
+      rescue StandardError
+      end
+    }
+  }
+
+  ts.each {|t| t.join}
+  
+  maybe_dups.keys.each {|size| unique.delete(size).to_s}
+
+  tmp = Hash.new { |k,v| k[v] =  Hash.new { |x,y| x[y] =  [] } } 
+  while not oqueue.empty?
+    m = oqueue.pop
+    tmp[m[:size]][m[:hash]] << m[:file]
+  end
+
+  unique.merge!(tmp)
+
+
+  #unique.select {|k,v| v.size > 1 }
+  #  .map do |size,files|
+  #     unique[size] = files_to_digests(files)
+  #  end
   puts unique.to_json
 when "merge"
   first = JSON.parse(File.read(ARGV[1]))
