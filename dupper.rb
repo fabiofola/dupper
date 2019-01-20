@@ -59,9 +59,19 @@ when "merge"
     second.delete(dupkey)
   end
   puts first.merge(second).to_json
+when "delete"
+  file = File.read(ARGV[1])
+  JSON.parse(file)
+    .select {|size,files| files.class == Hash }
+    .each do |size,digests|
+      digests.each do |digest, files|
+        if files.size > 1
+		files[1..-1].each {|e| puts e}
+        end
+      end
+  end
 when "read"
   file = File.read(ARGV[1])
-  #binding.pry
   JSON.parse(file)
     .select {|size,files| files.class == Hash }
     .each do |size,digests|
@@ -73,5 +83,5 @@ when "read"
       end
   end
 else
-  puts "report merge read"
+  puts "report merge read delete"
 end
