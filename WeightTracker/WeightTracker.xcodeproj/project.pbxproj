@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 56;
+objects = {
+
+/* Begin PBXBuildFile section */
+A1A24D8E29C2C2F600000001 /* WeightTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D8D29C2C2F600000001 /* WeightTrackerApp.swift */; };
+A1A24D9029C2C30C00000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D8F29C2C30C00000001 /* ContentView.swift */; };
+A1A24D9229C2C32400000001 /* WeightEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D9129C2C32400000001 /* WeightEntry.swift */; };
+A1A24D9429C2C33D00000001 /* WeightStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D9329C2C33D00000001 /* WeightStore.swift */; };
+A1A24D9729C2C35300000001 /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D9529C2C35300000001 /* AddEntryView.swift */; };
+A1A24D9929C2C35300000001 /* StatisticsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D9829C2C35300000001 /* StatisticsCard.swift */; };
+A1A24D9B29C2C36D00000001 /* TrendChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24D9A29C2C36D00000001 /* TrendChartView.swift */; };
+A1A24D9E29C2C3A900000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A24D9D29C2C3A900000001 /* Assets.xcassets */; };
+A1A24DA029C2C3C000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A24D9F29C2C3C000000001 /* Preview Assets.xcassets */; };
+A1A24DBD29C2C49C00000001 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24DBC29C2C49C00000001 /* String+Utilities.swift */; };
+A1A24DA729C2C40100000001 /* WeightTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24DA629C2C40100000001 /* WeightTrackerTests.swift */; };
+A1A24DAB29C2C41900000001 /* WeightTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24DAA29C2C41900000001 /* WeightTrackerUITests.swift */; };
+A1A24DAE29C2C43300000001 /* WeightTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24DAD29C2C43300000001 /* WeightTrackerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+A1A24DA829C2C40100000001 /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = A1A24D8229C2C2AF00000001 /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = A1A24D8929C2C2F600000001;
+remoteInfo = WeightTracker;
+};
+A1A24DAC29C2C41900000001 /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = A1A24D8229C2C2AF00000001 /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = A1A24D8929C2C2F600000001;
+remoteInfo = WeightTracker;
+};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+A1A24D8C29C2C2F600000001 /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+A1A24D8D29C2C2F600000001 /* WeightTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerApp.swift; sourceTree = "<group>"; };
+A1A24D8F29C2C30C00000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+A1A24D9129C2C32400000001 /* WeightEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEntry.swift; sourceTree = "<group>"; };
+A1A24D9329C2C33D00000001 /* WeightStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightStore.swift; sourceTree = "<group>"; };
+A1A24D9529C2C35300000001 /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+A1A24D9829C2C35300000001 /* StatisticsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCard.swift; sourceTree = "<group>"; };
+A1A24D9A29C2C36D00000001 /* TrendChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendChartView.swift; sourceTree = "<group>"; };
+A1A24DBC29C2C49C00000001 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+A1A24D9D29C2C3A900000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+A1A24D9F29C2C3C000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+A1A24DA229C2C3DE00000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+A1A24DA529C2C40100000001 /* WeightTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+A1A24DA629C2C40100000001 /* WeightTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerTests.swift; sourceTree = "<group>"; };
+A1A24DA929C2C41900000001 /* WeightTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeightTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+A1A24DAA29C2C41900000001 /* WeightTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerUITests.swift; sourceTree = "<group>"; };
+A1A24DAD29C2C43300000001 /* WeightTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+A1A24D8829C2C2F600000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ();
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DA229C2C40100000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ();
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DA929C2C41900000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ();
+runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+A1A24D8129C2C2AF00000001 = {isa = PBXGroup; children = (
+A1A24D8B29C2C2F600000001 /* Products */,
+A1A24DB229C2C46000000001 /* WeightTracker */,
+A1A24DB329C2C46000000001 /* WeightTrackerTests */,
+A1A24DB429C2C46000000001 /* WeightTrackerUITests */
+);
+sourceTree = "<group>"; };
+A1A24D8B29C2C2F600000001 /* Products */ = {isa = PBXGroup; children = (
+A1A24D8C29C2C2F600000001 /* WeightTracker.app */,
+A1A24DA529C2C40100000001 /* WeightTrackerTests.xctest */,
+A1A24DA929C2C41900000001 /* WeightTrackerUITests.xctest */
+);
+sourceTree = "<group>"; };
+A1A24DB229C2C46000000001 /* WeightTracker */ = {isa = PBXGroup; children = (
+A1A24DB529C2C46000000001 /* App */,
+A1A24DB629C2C46000000001 /* Models */,
+A1A24DB729C2C46000000001 /* Persistence */,
+A1A24DB829C2C46000000001 /* Views */,
+A1A24DB929C2C46000000001 /* Resources */
+);
+path = WeightTracker;
+sourceTree = "<group>"; };
+A1A24DB329C2C46000000001 /* WeightTrackerTests */ = {isa = PBXGroup; children = (
+A1A24DA629C2C40100000001 /* WeightTrackerTests.swift */
+);
+path = WeightTrackerTests;
+sourceTree = "<group>"; };
+A1A24DB429C2C46000000001 /* WeightTrackerUITests */ = {isa = PBXGroup; children = (
+A1A24DAA29C2C41900000001 /* WeightTrackerUITests.swift */,
+A1A24DAD29C2C43300000001 /* WeightTrackerUITestsLaunchTests.swift */
+);
+path = WeightTrackerUITests;
+sourceTree = "<group>"; };
+A1A24DB529C2C46000000001 /* App */ = {isa = PBXGroup; children = (
+A1A24D8D29C2C2F600000001 /* WeightTrackerApp.swift */
+);
+path = App;
+sourceTree = "<group>"; };
+A1A24DB629C2C46000000001 /* Models */ = {isa = PBXGroup; children = (
+A1A24D9129C2C32400000001 /* WeightEntry.swift */,
+A1A24DBC29C2C49C00000001 /* String+Utilities.swift */
+);
+path = Models;
+sourceTree = "<group>"; };
+A1A24DB729C2C46000000001 /* Persistence */ = {isa = PBXGroup; children = (
+A1A24D9329C2C33D00000001 /* WeightStore.swift */
+);
+path = Persistence;
+sourceTree = "<group>"; };
+A1A24DB829C2C46000000001 /* Views */ = {isa = PBXGroup; children = (
+A1A24D8F29C2C30C00000001 /* ContentView.swift */,
+A1A24D9529C2C35300000001 /* AddEntryView.swift */,
+A1A24D9829C2C35300000001 /* StatisticsCard.swift */,
+A1A24D9A29C2C36D00000001 /* TrendChartView.swift */
+);
+path = Views;
+sourceTree = "<group>"; };
+A1A24DB929C2C46000000001 /* Resources */ = {isa = PBXGroup; children = (
+A1A24D9D29C2C3A900000001 /* Assets.xcassets */,
+A1A24DBA29C2C46000000001 /* Preview Content */,
+A1A24DA229C2C3DE00000001 /* Info.plist */
+);
+path = Resources;
+sourceTree = "<group>"; };
+A1A24DBA29C2C46000000001 /* Preview Content */ = {isa = PBXGroup; children = (
+A1A24D9F29C2C3C000000001 /* Preview Assets.xcassets */
+);
+path = "Preview Content";
+sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+A1A24D8929C2C2F600000001 /* WeightTracker */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = A1A24DB029C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTracker" */;
+buildPhases = (
+A1A24D8729C2C2F600000001 /* Sources */,
+A1A24D8829C2C2F600000001 /* Frameworks */,
+A1A24D8A29C2C2F600000001 /* Resources */
+);
+buildRules = (
+);
+dependencies = (
+);
+name = WeightTracker;
+productName = WeightTracker;
+productReference = A1A24D8C29C2C2F600000001 /* WeightTracker.app */;
+productType = "com.apple.product-type.application";
+};
+A1A24DA429C2C40100000001 /* WeightTrackerTests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = A1A24DB129C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTrackerTests" */;
+buildPhases = (
+A1A24DA129C2C40100000001 /* Sources */,
+A1A24DA229C2C40100000001 /* Frameworks */,
+A1A24DA329C2C40100000001 /* Resources */
+);
+buildRules = (
+);
+dependencies = (
+A1A24DA929C2C40100000001 /* PBXTargetDependency */
+);
+name = WeightTrackerTests;
+productName = WeightTrackerTests;
+productReference = A1A24DA529C2C40100000001 /* WeightTrackerTests.xctest */;
+productType = "com.apple.product-type.bundle.unit-test";
+};
+A1A24DA829C2C41900000001 /* WeightTrackerUITests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = A1A24DB229C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTrackerUITests" */;
+buildPhases = (
+A1A24DA729C2C41900000001 /* Sources */,
+A1A24DA929C2C41900000001 /* Frameworks */,
+A1A24DAA29C2C41900000001 /* Resources */
+);
+buildRules = (
+);
+dependencies = (
+A1A24DAB29C2C41900000001 /* PBXTargetDependency */
+);
+name = WeightTrackerUITests;
+productName = WeightTrackerUITests;
+productReference = A1A24DA929C2C41900000001 /* WeightTrackerUITests.xctest */;
+productType = "com.apple.product-type.bundle.ui-testing";
+};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+A1A24D8229C2C2AF00000001 /* Project object */ = {
+isa = PBXProject;
+attributes = {
+LastSwiftUpdateCheck = 1500;
+LastUpgradeCheck = 1500;
+TargetAttributes = {
+A1A24D8929C2C2F600000001 = {
+CreatedOnToolsVersion = 15.0;
+};
+A1A24DA429C2C40100000001 = {
+CreatedOnToolsVersion = 15.0;
+TestTargetID = A1A24D8929C2C2F600000001;
+};
+A1A24DA829C2C41900000001 = {
+CreatedOnToolsVersion = 15.0;
+TestTargetID = A1A24D8929C2C2F600000001;
+};
+};
+};
+buildConfigurationList = A1A24D8529C2C2AF00000001 /* Build configuration list for PBXProject "WeightTracker" */;
+compatibilityVersion = "Xcode 14.0";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+Base,
+);
+mainGroup = A1A24D8129C2C2AF00000001;
+productRefGroup = A1A24D8B29C2C2F600000001 /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+A1A24D8929C2C2F600000001 /* WeightTracker */,
+A1A24DA429C2C40100000001 /* WeightTrackerTests */,
+A1A24DA829C2C41900000001 /* WeightTrackerUITests */
+);
+};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+A1A24D8A29C2C2F600000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+A1A24DA029C2C3C000000001 /* Preview Assets.xcassets in Resources */,
+A1A24D9E29C2C3A900000001 /* Assets.xcassets in Resources */
+);
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DA329C2C40100000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ();
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DAA29C2C41900000001 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ();
+runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+A1A24D8729C2C2F600000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+A1A24DBD29C2C49C00000001 /* String+Utilities.swift in Sources */,
+A1A24D9929C2C35300000001 /* StatisticsCard.swift in Sources */,
+A1A24D9B29C2C36D00000001 /* TrendChartView.swift in Sources */,
+A1A24D9029C2C30C00000001 /* ContentView.swift in Sources */,
+A1A24D9729C2C35300000001 /* AddEntryView.swift in Sources */,
+A1A24D9429C2C33D00000001 /* WeightStore.swift in Sources */,
+A1A24D9229C2C32400000001 /* WeightEntry.swift in Sources */,
+A1A24D8E29C2C2F600000001 /* WeightTrackerApp.swift in Sources */
+);
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DA129C2C40100000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+A1A24DA729C2C40100000001 /* WeightTrackerTests.swift in Sources */
+);
+runOnlyForDeploymentPostprocessing = 0; };
+A1A24DA729C2C41900000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+A1A24DAE29C2C43300000001 /* WeightTrackerUITestsLaunchTests.swift in Sources */,
+A1A24DAB29C2C41900000001 /* WeightTrackerUITests.swift in Sources */
+);
+runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+A1A24DA929C2C40100000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A1A24D8929C2C2F600000001 /* WeightTracker */; targetProxy = A1A24DA829C2C40100000001 /* PBXContainerItemProxy */; };
+A1A24DAB29C2C41900000001 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A1A24D8929C2C2F600000001 /* WeightTracker */; targetProxy = A1A24DAC29C2C41900000001 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+A1A24D8629C2C2AF00000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CODE_SIGN_IDENTITY = "Apple Development";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = dwarf;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+ONLY_ACTIVE_ARCH = YES;
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+};
+name = Debug;
+};
+A1A24D8729C2C2AF00000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CODE_SIGN_IDENTITY = "Apple Development";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+MTL_ENABLE_DEBUG_INFO = NO;
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+VALIDATE_PRODUCT = YES;
+};
+name = Release;
+};
+A1A24DB529C2C42800000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+INFOPLIST_FILE = WeightTracker/Resources/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTracker;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+};
+name = Debug;
+};
+A1A24DB629C2C42800000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+INFOPLIST_FILE = WeightTracker/Resources/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTracker;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+};
+name = Release;
+};
+A1A24DB729C2C42800000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+BUNDLE_LOADER = "$(TEST_HOST)";
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTrackerTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightTracker";
+};
+name = Debug;
+};
+A1A24DB829C2C42800000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+BUNDLE_LOADER = "$(TEST_HOST)";
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTrackerTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeightTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeightTracker";
+};
+name = Release;
+};
+A1A24DB929C2C42800000001 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTrackerUITests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+TEST_TARGET_NAME = WeightTracker;
+};
+name = Debug;
+};
+A1A24DBA29C2C42800000001 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.WeightTrackerUITests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1";
+TEST_TARGET_NAME = WeightTracker;
+};
+name = Release;
+};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+A1A24D8529C2C2AF00000001 /* Build configuration list for PBXProject "WeightTracker" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1A24D8629C2C2AF00000001 /* Debug */,
+A1A24D8729C2C2AF00000001 /* Release */
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+A1A24DB029C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTracker" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1A24DB529C2C42800000001 /* Debug */,
+A1A24DB629C2C42800000001 /* Release */
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+A1A24DB129C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTrackerTests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1A24DB729C2C42800000001 /* Debug */,
+A1A24DB829C2C42800000001 /* Release */
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+A1A24DB229C2C42800000001 /* Build configuration list for PBXNativeTarget "WeightTrackerUITests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+A1A24DB929C2C42800000001 /* Debug */,
+A1A24DBA29C2C42800000001 /* Release */
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+/* End XCConfigurationList section */
+};
+rootObject = A1A24D8229C2C2AF00000001 /* Project object */;
+}
